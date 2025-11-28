@@ -151,6 +151,10 @@ nav {
     font-weight: 800;
 }
 
+.enjoy-underline {
+    border-bottom: 4px solid #FF7D4D;
+}
+
 .hero-description {
     color: #5E5E5E;
     font-size: 16px;
@@ -1206,11 +1210,12 @@ nav {
     box-shadow: 0 8px 20px rgba(255, 125, 77, 0.3);
 }
 
-/* Footer */
+/* Footer - light background */
 footer {
     padding: 80px 80px 40px;
-    background: #14183E;
-    color: #fff;
+    background: #ffffff;
+    color: #14183E;
+    position: relative;
 }
 
 .footer-content {
@@ -1228,133 +1233,99 @@ footer {
 
 .footer-about h3 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-weight: 700;
+    color: #14183E;
 }
 
 .footer-about p {
-    color: #ccc;
-    line-height: 1.8;
-    margin-bottom: 25px;
-    max-width: 280px;
+    color: #6B6E85;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    max-width: 320px;
 }
 
 .footer-social {
     display: flex;
-    gap: 15px;
+    gap: 12px;
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
-    background: rgba(218, 107, 163, 0.2);
+    width: 36px;
+    height: 36px;
+    background: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #DA6BA3;
+    color: #6B5B95;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s ease;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 6px 18px rgba(107,91,149,0.06);
+    border: 1px solid rgba(20,24,62,0.04);
 }
 
 .social-icon:hover {
-    background: rgba(218, 107, 163, 0.4);
     transform: translateY(-3px);
 }
 
 .footer-column h4 {
-    margin-bottom: 25px;
-    font-size: 18px;
+    margin-bottom: 16px;
+    font-size: 16px;
     font-weight: 700;
+    color: #14183E;
 }
 
-.footer-links {
-    list-style: none;
-}
+.footer-links { list-style: none; }
 
-.footer-links li {
-    margin-bottom: 12px;
-}
+.footer-links li { margin-bottom: 10px; }
 
 .footer-links a {
-    color: #ccc;
+    color: #6B6E85;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.2s;
     font-size: 15px;
 }
 
-.footer-links a:hover {
-    color: #FF7D4D;
-}
+.footer-links a:hover { color: #FF7D4D; }
 
-.footer-app {
-    display: flex;
-    flex-direction: column;
-}
+.footer-app { display:flex; flex-direction: column; }
 
-.app-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
+.app-header { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+.app-header h4 { font-size: 16px; font-weight: 700; color: #14183E; margin: 0; }
+.app-icon { display: flex; gap: 10px; }
 
-.app-header h4 {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-}
-
-.app-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.app-icon svg {
-    width: 50px;
-    height: 50px;
-}
-
-.app-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+.app-buttons { display:flex; gap:12px; align-items:center }
 
 .app-btn {
-    padding: 12px 20px;
-    background: #000;
-    color: #fff;
-    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    background: #f0f0f0;
+    color: #333;
+    border-radius: 50%;
     text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    text-align: center;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
+    transition: all 0.25s ease;
+    display: inline-flex;
     justify-content: center;
-}
-
-.app-btn-dark {
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    align-items: center;
 }
 
 .app-btn:hover {
-    background: #FF7D4D;
+    background: #e0e0e0;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 125, 77, 0.3);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.app-btn i {
+    font-size: 20px;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    color: #999;
+    border-top: 1px solid rgba(20,24,62,0.06);
+    color: #8F8FA0;
     font-size: 14px;
 }
 
