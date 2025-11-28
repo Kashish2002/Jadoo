@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadoo - Travel & Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Jadoo</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#flights">Flights</a></li>
+            <li><a href="#bookings">Bookings</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-buttons">
+            <button class="btn-login">Login</button>
+            <button class="btn-signup">Sign up</button>
+            <div class="language-selector">
+                <span>EN</span>
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h3 class="hero-subtitle">Best Destinations Around The World</h3>
+            <h1 class="hero-title">Travel, enjoy<br>and live a new<br>and full life</h1>
+            <p class="hero-description">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+            <div class="hero-buttons">
+                <button class="btn-find">
+                    <span>Find out more</span>
+                </button>
+                <button class="btn-demo">
+                    <div class="play-icon">▶</div>
+                    <span>Play Demo</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-container">
+                <img src="hero-img.png" alt="Travel Hero" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="section-header">
+            <p class="section-subtitle">Category</p>
+            <h2 class="section-title">We Offer Best Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <svg class="service-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="16" y="24" width="32" height="28" rx="2" stroke="#5B9BD5" stroke-width="2"/>
+                        <path d="M24 24V16C24 14.9 24.9 14 26 14H38C39.1 14 40 14.9 40 16V24" stroke="#5B9BD5" stroke-width="2"/>
+                        <circle cx="28" cy="36" r="2" fill="#5B9BD5"/>
+                        <circle cx="36" cy="36" r="2" fill="#5B9BD5"/>
+                    </svg>
+                </div>
+                <h3>Calculated Weather</h3>
+                <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <svg class="service-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32 12L48 28V48C48 49.1 47.1 50 46 50H18C16.9 50 16 49.1 16 48V28L32 12Z" stroke="#FF7D4D" stroke-width="2"/>
+                        <path d="M32 20V40" stroke="#FF7D4D" stroke-width="1.5"/>
+                        <path d="M24 30H40" stroke="#FF7D4D" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <h3>Best Flights</h3>
+                <p>Engrossed listening. Park gate sell they west hard for the.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <svg class="service-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32 14C28.7 14 26 16.7 26 20C26 23.3 32 32 32 32C32 32 38 23.3 38 20C38 16.7 35.3 14 32 14Z" stroke="#333" stroke-width="2"/>
+                        <circle cx="32" cy="20" r="2" fill="#333"/>
+                        <path d="M20 42H44C45.1 42 46 42.9 46 44V50C46 51.1 45.1 52 44 52H20C18.9 52 18 51.1 18 50V44C18 42.9 18.9 42 20 42Z" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Local Events</h3>
+                <p>Barton vanity itself do in it. Preferred to men it engrossed listening.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <svg class="service-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="14" stroke="#999" stroke-width="2"/>
+                        <path d="M32 20V32" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M44 32L32 32" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="26" cy="38" r="2" fill="#999"/>
+                        <circle cx="38" cy="26" r="2" fill="#999"/>
+                    </svg>
+                </div>
+                <h3>Customization</h3>
+                <p>We deliver outsourced aviation services for military customers.</p>
+            </div>
+        </div>
+        <div class="services-decoration">
+            <div class="decoration-element"></div>
+        </div>
+    </section>
+
+    <!-- Top Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="section-header">
+            <p class="section-subtitle">Top Selling</p>
+            <h2 class="section-title">Top Destinations</h2>
+        </div>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <div class="destination-image-wrapper">
+                    <div class="destination-image rome"></div>
+                </div>
+                <div class="destination-info">
+                    <div class="destination-header">
+                        <div class="destination-name-wrapper">
+                            <span class="destination-name">Rome, Italy</span>
+                        </div>
+                        <span class="destination-price">$5.42k</span>
+                    </div>
+                    <div class="destination-duration">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        10 Days Trip
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="destination-image-wrapper">
+                    <div class="destination-image london"></div>
+                </div>
+                <div class="destination-info">
+                    <div class="destination-header">
+                        <div class="destination-name-wrapper">
+                            <span class="destination-name">London, UK</span>
+                        </div>
+                        <span class="destination-price">$4.2k</span>
+                    </div>
+                    <div class="destination-duration">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        12 Days Trip
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="destination-image-wrapper">
+                    <div class="destination-image europe"></div>
+                </div>
+                <div class="destination-info">
+                    <div class="destination-header">
+                        <div class="destination-name-wrapper">
+                            <span class="destination-name">Full Europe</span>
+                        </div>
+                        <span class="destination-price">$15k</span>
+                    </div>
+                    <div class="destination-duration">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        28 Days Trip
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="destinations-decoration">
+            <svg class="decoration-wave" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M 0 50 Q 25 30 50 50 T 100 50" stroke="rgba(255,125,77,0.1)" stroke-width="2" fill="none"/>
+                <path d="M 0 60 Q 25 40 50 60 T 100 60" stroke="rgba(255,125,77,0.08)" stroke-width="1.5" fill="none"/>
+                <path d="M 0 70 Q 25 50 50 70 T 100 70" stroke="rgba(255,125,77,0.05)" stroke-width="1" fill="none"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Booking Steps -->
+    <section class="booking-steps" id="bookings">
+        <div class="steps-content">
+            <p class="booking-subtitle">Easy and Fast</p>
+            <h2 class="booking-title">Book Your Next Trip<br>In 3 Easy Steps</h2>
+            <div class="steps-list">
+                <div class="step">
+                    <div class="step-icon step-1">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11H7.5C6.67157 11 6 10.3284 6 9.5V8C6 6.89543 6.89543 6 8 6H16C17.1046 6 18 6.89543 18 8V9.5C18 10.3284 17.3284 11 16.5 11H15"></path>
+                            <path d="M9 11V15C9 16.1046 9.89543 17 11 17H13C14.1046 17 15 16.1046 15 15V11"></path>
+                        </svg>
+                    </div>
+                    <div class="step-info">
+                        <h4>Choose Destination</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon step-2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <div class="step-info">
+                        <h4>Make Payment</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon step-3">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6-6 6 6"></path>
+                            <path d="M6 9h12M12 3v18"></path>
+                        </svg>
+                    </div>
+                    <div class="step-info">
+                        <h4>Reach Airport on Selected Date</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="booking-card-wrapper">
+            <div class="booking-card">
+                <div class="booking-image">
+                    <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="300" height="200" fill="url(#sky)"/>
+                        <rect x="20" y="100" width="260" height="100" fill="#F5F5F5"/>
+                        <circle cx="150" cy="80" r="40" fill="#FFD700" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div class="booking-info">
+                    <div class="trip-details">
+                        <h3>Trip To Greece</h3>
+                        <p class="trip-date">14-29 June | by Robbin j</p>
+                        <p class="trip-status">
+                            <span class="status-badge">Ongoing</span>
+                            <span class="status-label">Trip to rome</span>
+                        </p>
+                    </div>
+                    <div class="trip-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%;"></div>
+                        </div>
+                        <span class="progress-text">40% Completed</span>
+                    </div>
+                    <div class="trip-meta">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>24 people going</span>
+                        <button class="like-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <p class="section-subtitle">Testimonials</p>
+                <h2 class="section-title">What People Say<br>About Us.</h2>
+                <div class="carousel-dots">
+                    <button class="dot active" onclick="showTestimonial(0)"></button>
+                    <button class="dot" onclick="showTestimonial(1)"></button>
+                    <button class="dot" onclick="showTestimonial(2)"></button>
+                </div>
+            </div>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial-card active" id="testimonial-0">
+                    <div class="testimonial-top">
+                        <div class="testimonial-avatar">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#FF9F43"/>
+                                <circle cx="50" cy="35" r="15" fill="#fff"/>
+                                <path d="M 30 60 Q 50 75 70 60" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <div class="carousel-buttons">
+                            <button class="carousel-nav nav-prev" onclick="prevTestimonial()">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="carousel-nav nav-next" onclick="nextTestimonial()">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"On the Windows talking pointed pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."</p>
+                    <div class="testimonial-author">Mike Taylor</div>
+                    <div class="testimonial-role">Lahore, Pakistan</div>
+                </div>
+
+                <div class="testimonial-card" id="testimonial-1">
+                    <div class="testimonial-top">
+                        <div class="testimonial-avatar">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#5B9BD5"/>
+                                <circle cx="50" cy="35" r="15" fill="#fff"/>
+                                <path d="M 30 60 Q 50 75 70 60" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <div class="carousel-buttons">
+                            <button class="carousel-nav nav-prev" onclick="prevTestimonial()">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="carousel-nav nav-next" onclick="nextTestimonial()">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Chris Thomas from Red Button has been amazing! The entire team delivered exceptional service. Highly recommended for anyone looking for professional travel planning."</p>
+                    <div class="testimonial-author">Chris Thomas</div>
+                    <div class="testimonial-role">CEO of Red Button</div>
+                </div>
+
+                <div class="testimonial-card" id="testimonial-2">
+                    <div class="testimonial-top">
+                        <div class="testimonial-avatar">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#F0BB1F"/>
+                                <circle cx="50" cy="35" r="15" fill="#fff"/>
+                                <path d="M 30 60 Q 50 75 70 60" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <div class="carousel-buttons">
+                            <button class="carousel-nav nav-prev" onclick="prevTestimonial()">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="carousel-nav nav-next" onclick="nextTestimonial()">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Amazing experience from start to finish! The team was professional, responsive, and made our trip unforgettable. Will definitely book again!"</p>
+                    <div class="testimonial-author">Sarah Johnson</div>
+                    <div class="testimonial-role">London, UK</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners">
+        <div class="partners-content">
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axon Logo -->
+                    <text x="10" y="28" font-size="24" font-weight="bold" fill="#333">axon</text>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Jetstar Logo -->
+                    <text x="10" y="28" font-size="20" font-weight="bold" fill="#333">jetstar</text>
+                    <path d="M 70 15 L 75 20 L 70 25" stroke="#FF6600" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Expedia Logo -->
+                    <circle cx="20" cy="20" r="12" fill="#003580"/>
+                    <text x="35" y="26" font-size="16" font-weight="bold" fill="#333">Expedia</text>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Qantas Logo -->
+                    <text x="10" y="26" font-size="18" font-weight="bold" fill="#333">QANTAS</text>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Alitalia Logo -->
+                    <text x="10" y="26" font-size="18" font-weight="bold" fill="#333">Alitalia</text>
+                </svg>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axon Logo -->
+                    <text x="10" y="28" font-size="24" font-weight="bold" fill="#333">axon</text>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Jetstar Logo -->
+                    <text x="10" y="28" font-size="20" font-weight="bold" fill="#333">jetstar</text>
+                    <path d="M 70 15 L 75 20 L 70 25" stroke="#FF6600" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Expedia Logo -->
+                    <circle cx="20" cy="20" r="12" fill="#003580"/>
+                    <text x="35" y="26" font-size="16" font-weight="bold" fill="#333">Expedia</text>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Qantas Logo -->
+                    <text x="10" y="26" font-size="18" font-weight="bold" fill="#333">QANTAS</text>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Alitalia Logo -->
+                    <text x="10" y="26" font-size="18" font-weight="bold" fill="#333">Alitalia</text>
+                </svg>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axon Logo -->
+                    <text x="10" y="28" font-size="24" font-weight="bold" fill="#333">axon</text>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Jetstar Logo -->
+                    <text x="10" y="28" font-size="20" font-weight="bold" fill="#333">jetstar</text>
+                    <path d="M 70 15 L 75 20 L 70 25" stroke="#FF6600" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Expedia Logo -->
+                    <circle cx="20" cy="20" r="12" fill="#003580"/>
+                    <text x="35" y="26" font-size="16" font-weight="bold" fill="#333">Expedia</text>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Qantas Logo -->
+                    <text x="10" y="26" font-size="18" font-weight="bold" fill="#333">QANTAS</text>
+                </svg>
+            </div>
+            <div class="partner-item">
+                <svg class="partner-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Alitalia Logo -->
+                    <text x="10" y="26" font-size="18" font-weight="bold" fill="#333">Alitalia</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Subscribe to get information, latest news and other interesting offers about Jadoo</h2>
+            
+            <form class="newsletter-form" onsubmit="return false;">
+                <div class="input-wrapper">
+                    <svg class="input-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2 4L10 10L18 4M2 4V16C2 16.5304 2.21071 17.0391 2.58579 17.4142C2.96086 17.7893 3.46957 18 4 18H16C16.5304 18 17.0391 17.7893 17.4142 17.4142C17.7893 17.0391 18 16.5304 18 16V4M2 4H18" stroke="#FF7D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <input type="email" class="newsletter-input" placeholder="Your email" required>
+                </div>
+                <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Jadoo.</h3>
+                <p>Book your trip in minute, get full Control for much longer.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">f</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help/FAQ</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>More</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Airlinefees</a></li>
+                    <li><a href="#">Airline</a></li>
+                    <li><a href="#">Low fare tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-app">
+                <div class="app-header">
+                    <h4>Discover our app</h4>
+                    <div class="app-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#DA6BA3" opacity="0.2"/>
+                            <text x="25" y="30" font-size="24" font-weight="bold" fill="#DA6BA3" text-anchor="middle">f</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn app-btn-dark">Get it on Google Play</a>
+                    <a href="#" class="app-btn app-btn-dark">Download on App Store</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All rights reserved@jadoo.co</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
