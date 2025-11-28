@@ -22,6 +22,12 @@ nav {
     box-shadow: none;
 }
 
+.navdiv2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .logo {
     font-size: 28px;
     font-weight: 800;
@@ -1084,8 +1090,10 @@ nav {
 
 /* Newsletter */
 .newsletter {
-    padding: 80px 80px;
-    text-align: center;
+    border-radius: 20px;
+    width: 1000px;
+    margin: auto;
+    padding: 100px 80px;    text-align: center;
     background: linear-gradient(135deg, #E8E6F3 0%, #F0EDF7 100%);
     position: relative;
     overflow: hidden;
